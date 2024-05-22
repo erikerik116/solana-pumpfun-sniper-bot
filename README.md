@@ -14,6 +14,7 @@
 
 > [!NOTE]
 > This is provided as is, for learning and test purposes. Use at your own risk.
+> For "PRO Version" contact me at @majorseendor0101 on TG.
 
 
 # Features
