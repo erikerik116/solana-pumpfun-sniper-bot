@@ -1,111 +1,84 @@
-![Banner](https://raw.githubusercontent.com/CryptoTechZoo/fssb-fast-solana-sniper-bot/main/imgs/logo.png?token=GHSAT0AAAAAACQ7I5N4PN6HO3RVHTL2EE3WZQ4ZNWA)
+# Solana-Pump-Fun-Sniper-Solana
+ A Pump Fun sniper detects all liquidity pools launched on the platform
 
-## FSSB SOLANA SNIPER BOT
+##CONTACT INFO
+-discord:  joni_727373
+-telegram: @Akamala88071015
 
-![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)
-[![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
-[![GitHub Forks](https://img.shields.io/github/forks/CryptoTechZoo/fssb-fast-solana-sniper-bot.svg?branch=main)](https://github.com/CryptoTechZoo/fssb-fast-solana-sniper-bot/network)
-[![GitHub Stars](https://img.shields.io/github/stars/CryptoTechZoo/fssb-fast-solana-sniper-bot.svg?branch=main)](https://github.com/CryptoTechZoo/fssb-fast-solana-sniper-bot/stargazers)
-[![GitHub License](https://img.shields.io/badge/license-mit.svg)](https://raw.githubusercontent.com/CryptoTechZoo/fssb-fast-solana-sniper-bot/main/LICENSE.md)
+## Features
+- **Automated Trading:** Automatically buy the latest coins on Pump.Fun and sell them once your target profit percentage or stop-loss percentage is reached.
+- **King of The Hill Coins:** Support for buying the top-performing coins.
+- **Custom RPC Support:** Use your preferred Solana RPC for transactions.
+- **User-Friendly Setup:** Easy setup by adding your private key and RPC URL.
+- **Latest Coins Information:** Pulls the latest 10 coins created and allows you to view more information and buy each individually.
+- **Persistent Positions:** Saves your positions and reloads them on restart.
 
-**FSSB solana sniper** is a bot that listen for all new raydium tokens pool USDC/SOL sniped in realtime. 
+## Latest Update
+- **New Feature:** Now pulls the latest 10 coins created on Pump.Fun.
+- **Enhanced Functionality:** Allows you to see more information about each coin and buy them individually.
+- **Position Persistence:** Automatically saves your positions and reloads them upon restart.
+- **Take Profit and Stop-Loss:** Set take profit and stop-loss percentages for automated selling.
 
-> *Bot snipe & trade new token before it show on web Raydium UI ready for swapping.*
+## Getting Started
+### Installation
 
-> [!NOTE]
-> This is provided as is, for learning and test purposes. Use at your own risk.
-> 
-> For "PRO Version" contact me at @majorseendor0101 on TG.
+1. Open your terminal.
+2. Clone the my repository
+3. Navigate to the project directory: cd Pump-Fun-Sniper-Solana
+4. Install the required dependencies: npm install
 
+### Configuration
 
-# Features
-- `Automatic snipe new pair pool`
-- `Stoploss & Takeprofit`
-- `Filter by min & max liquidity`
-- `USDC & WSOL`
-- `Burn Check`
-- `Renounce Check`
-- `Speed Buy`
+1. Open the pump_fun.js file.
+2. Add your private key and RPC URL in the appropriate fields.
 
+### Running the Tool
 
-## Wallet prepare
-First step:
-1. Create a new Solana wallet
-2. Transfer some SOL to this new wallet
-3. Convert some SOL to USDC or WSOL (you need USDC or WSOL depending on the configuration in .env file)
+Start the tool by running: npm start
 
+### Setting Up
 
-## Dependencies
-- [Node.js](https://nodejs.org/en/download)
+1. Run the tool with npm start.
+2. Select "Set settings" from the menu to configure your bot settings including:
+   - Minimum Market Cap
+   - Minimum Reply Count
+   - Require Telegram
+   - Require Website
+   - Require Twitter
+   - Require Revoked Mint Authority and Freeze Authority
+   - Enable Auto Buy
+   - Set Buy Amount
+   - Enable Take Profit
+   - Set Take Profit Percentage
+   - Enable Stop Loss
+   - Set Stop Loss Percentage
 
-> [!TIP]
-> # Installation
->
->[1] ```git clone https://github.com/CryptoTechZoo/fssb-fast-solana-sniper-bot.git```
-> 
->[2] ```cd fssb-fast-solana-sniper-bot```
-> 
->[3] ```npm install```
->
->[4] Configure .env.copy file and rename .env
-> 
->[5] ```npm run fssb```
+### Using the Tool
 
+- **Purchase the Latest Coin:** Buy the latest coin that meets your requirements.
+- **View Positions:** View your current positions and manage them, including selling all positions.
+- **Set Settings:** Configure the bot settings.
+- **Exit:** Exit the tool.
 
-## Configure .env file
-1. Configure the script by updating `.env.copy` file (**remove the ".copy" extension**).
-2. `MY_PRIVATE_KEY` (your wallet private key)
-3. `RPC_ENDPOINT` (https RPC endpoint) paid services are faster
-4. `RPC_WEBSOCKET` (websocket RPC endpoint) paid services are faster
-5. `TOKEN_SYMB` (which pools to snipe, USDC or WSOL)
-6. `BUY_AMOUNT` (amount used to buy each new token)
-7. `USE_SNIPEDLIST` (bot buy only tokens listed in snipedlist.txt)
-8. `SNIPE_LIST_REFRESH_INTERVAL` (how often snipe list should be refreshed in milliseconds)
-9. `MINT_IS_RENOUNCED` (bot buy only if mint is renounced)
-10. `MIN_POOL_SIZE` (bot buy only if pool size is > of amount)
-11. `MAX_POOL_SIZE` (bot buy only if pool size is < of amount)
-13. `TAKE_PROFIT=200` (in %)
-13. `STOP_LOSS=90` (in %)
-14. `BIRDEYE_APIKEY=` get here: https://birdeye.so/user/profile#security
-
-![](https://raw.githubusercontent.com/CryptoTechZoo/fssb-fast-solana-sniper-bot/main/imgs/running.png?token=GHSAT0AAAAAACQ7I5N4U72GWBBKU3AOHMJ2ZQ4ZMYQ)
+Enjoy automated trading with Pump-Fun-Sniper-Solana!
 
 
-## Auto sell
-By default, auto sell is enabled. If you want to disable it, you need to:
-1. Change variable `AUTO_SELL` to `false`
-2. Update `MAX_SELL_RETRIES` to set the maximum number of retries for selling token
-3. Update `AUTO_SELL_DELAY` to the number of milliseconds you want to wait before selling the token (this will sell the token after the specified delay. (+- RPC node speed)).
 
-AUTO_SELL_DELAY to 0, token will be sold immediately after buy.
-There is no guarantee that the token will be sold at a profit or even sold at all. The developer is not responsible for any losses incurred by using this feature.
+<img width="434" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/9400e820-b87b-48a7-93f2-8da8ad1a4a06">
 
-## Snipe list
-By default, script buys each token which has a new liquidity pool created and open for trading. 
-There are scenarios when you want to buy one specific token as soon as possible during the launch event.
-To achieve this, you'll have to use snipe list.
-1. Change variable `USE_SNIPEDLIST` to `true`
-2. Add token mint addresses you wish to buy in `snipedlist.txt` file (add each address as a new line).
+<img width="530" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/8099dd2b-5627-4941-81eb-7f1fd6cc2bff">
 
-This prevent from buying everything, and buy just listed tokens.
-You can update the list while script is running. Script will check for new values in specified interval (`SNIPE_LIST_REFRESH_INTERVAL`).
+<img width="469" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/64d38931-e0fe-4857-a5c7-36e28c80c4cf">
+
+<img width="603" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/c5220539-d993-4045-9a9e-06ed0b43a81a">
+
+<img width="828" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/322e1fc5-4a15-4de4-bf7c-1f1e44f0e1c8">
+
+<img width="932" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/5e137d1d-8025-4470-b5ff-0f2a182fa381">
+
+<img width="692" alt="image" src="https://github.com/idkwhatimdoingimserious/Pump-Fun-Sniper-Solana/assets/143815179/0d803342-6901-48a0-bb8d-d23a2bf8a89e">
 
 
-## F.a.q.
 
-> ### UNSUPPORTED RPC NODE
-> If you see following error in your log file:  
-> `Error: 410 Gone:  {"jsonrpc":"2.0","error":{"code": 410, "message":"The RPC call or parameters have been disabled."}`  
-> It means your RPC node doesn't support methods needed to execute script.
-> FIX: Change your RPC node. You can use Shyft, Helius or Quicknode.
-> 
-> ### NO TOKEN ACCOUNT
-> If you see following error in your log file:  
-> `Error: No SOL token account found in wallet: `  
-> it means that your wallet not have USDC/WSOL token account.
-> FIX: Go to [Jup.ag](https://jup.ag) and swap some SOL/USDC or SOL/WSOL.
-> ![](https://raw.githubusercontent.com/CryptoTechZoo/fssb-fast-solana-sniper-bot/main/imgs/jupwsol.png?token=GHSAT0AAAAAACQ7I5N4FPQPKWAAB744P2V6ZQ4ZL6Q)
 
-## Disclaimer
-Use this script at your own risk. No financial advice.
 
