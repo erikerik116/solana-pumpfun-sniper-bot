@@ -1,4 +1,4 @@
-# Solana-Pump-Fun-Sniper-Solana
+# Solana-Pump-Fun-Sniper-Bot
  A Pump Fun sniper detects all liquidity pools launched on the platform
 
 ##CONTACT INFO
