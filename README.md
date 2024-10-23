@@ -1,7 +1,7 @@
 # Solana-Pump-Fun-Sniper-Bot
  A Pump Fun sniper detects all liquidity pools launched on the platform
 
-##CONTACT INFO
+## CONTACT INFO
 
 -discord:  joni_727373
 
