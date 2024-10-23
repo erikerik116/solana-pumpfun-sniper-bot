@@ -2,7 +2,9 @@
  A Pump Fun sniper detects all liquidity pools launched on the platform
 
 ##CONTACT INFO
+
 -discord:  joni_727373
+
 -telegram: @Akamala88071015
 
 ## Features
