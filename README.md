@@ -1,5 +1,5 @@
 # Solana-Pump-Fun-Sniper-Bot
- A Pump Fun sniper detects all liquidity pools launched on the platform
+ A Pump Fun sniper detects all liquidity pools launched on the platform in Dex
 
 ## CONTACT INFO
 
