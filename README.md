@@ -3,7 +3,7 @@
 
 ## CONTACT INFO
 
--discord:  joni_727373
+-discord:  adelo_8
 
 -telegram: @Akamala88071015
 
