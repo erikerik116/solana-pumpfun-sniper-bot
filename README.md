@@ -3,9 +3,9 @@
 
 ## CONTACT INFO
 
--discord:  adelo_8
+-discord:  erikerik116
 
--telegram: @Akamala88071015
+-telegram: @erikerik116
 
 ## Features
 - **Automated Trading:** Automatically buy the latest coins on Pump.Fun and sell them once your target profit percentage or stop-loss percentage is reached.
