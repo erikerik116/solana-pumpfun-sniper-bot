@@ -26,7 +26,7 @@
 
 1. Open your terminal.
 2. Clone the my repository
-3. Navigate to the project directory: cd Pump-Fun-Sniper-Solana
+3. Navigate to the project directory: cd solana-pumpfun-sniper-bot
 4. Install the required dependencies: npm install
 
 ### Configuration
